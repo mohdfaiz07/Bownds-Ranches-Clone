@@ -1,0 +1,712 @@
+@font-face {
+
+    font-family: america-r;
+    src: url(/GT-America-Standard-Regular.ttf);
+
+}
+
+@font-face {
+
+    font-family: america-b;
+    src: url(/GT-America-Compressed-Bold\ \(1\).ttf);
+
+}
+
+@font-face {
+    font-family: america-bb;
+    src: url(/GT-America-Compressed-Bold.ttf);
+}
+
+@font-face {
+    font-family: america-t;
+    src: url(/GT-America-Compressed-Thin.ttf);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: america-r;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    color: #c45508;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+#nav-prt1 {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+#nav-prt1 h3 {
+    font-family: america-b;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+
+}
+
+
+#nav-prt2 {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-prt2 h3 {
+    font-family: america-b;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+
+}
+
+
+
+#nav-prt1 h3::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #c45508;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform linear .3s;
+
+}
+
+#nav-prt1 h3:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+#nav-prt2 h3::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #c45508;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform linear .3s;
+
+}
+
+#nav-prt2 h3:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+svg {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    scale: 1;
+    z-index: 99;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/b66561b8981387290c0f682665512759c66aa7bb-2880x1796.png/image.png?bg=F2F1EC&w=1440&h=898&auto=format);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#page1 h1 {
+    width: 100%;
+    font-family: america-bb;
+    font-size: 15vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    color: #c45508;
+    padding: 10px 2px;
+
+
+}
+
+#page1 h1 span {
+    font-family: america-b;
+}
+
+#page1 h1:before {
+    content: "bownds ranches. est. 1885";
+    font-family: america-r;
+    color: #c45508;
+    position: absolute;
+    font-size: 1vw;
+    top: 15%;
+    left: 13px;
+    font-weight: 200;
+
+
+}
+
+
+
+#page1 h1::after {
+    content: "marketing & selling texas ranches";
+    height: 10px;
+    font-family: america-r;
+    letter-spacing: 1px;
+    color: #c45508;
+    position: absolute;
+    font-size: 1vw;
+    top: 15%;
+    right: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: -1px;
+}
+
+
+#page1 #scroll {
+    background-image: url(https://bowndsranches.com/textures/buttonDarkBg.svg);
+    color: #fff;
+    text-align: center;
+    padding: 12px 25px;
+    font-size: 17px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+    position: absolute;
+    scale: 0;
+    transition: all ease .4s;
+
+
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#page2 {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: lightcyan;
+    padding: 20px 20px;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=1,0,2723,1936&w=1024&h=728&auto=format);
+    background-size: cover;
+
+
+
+}
+
+#page2 h1 {
+    font-family: america-b;
+    font-size: 12vw;
+    letter-spacing: -4px;
+    line-height: 9vw;
+    text-align: center;
+    position: relative;
+
+}
+
+
+
+#page2 h1 span {
+    font-family: america-b
+}
+
+
+#page2 h1::before {
+    content: "THE REPRESENTATION YOU DESERVE";
+    position: absolute;
+    left: 12%;
+    top: 37%;
+    font-size: 1vw;
+    font-family: america-b;
+    letter-spacing: 2px;
+    width: 10%;
+    line-height: 1.1vw;
+    text-align: left;
+    color: #000000c4;
+
+
+
+}
+
+
+#page2 h1::after {
+    content: "ONE OF AMERICA’S BEST BROKERAGES";
+    position: absolute;
+    right: 0;
+    font-size: 1vw;
+
+}
+
+
+#page2 img {
+    height: 900px;
+    width: 700px;
+    text-align: center;
+    position: relative;
+    left: 28vw;
+    transform: rotate(-5deg);
+    transform-origin: 50% 50%;
+    transition: all ease .4s;
+
+}
+
+#page2>h2 {
+    font-family: america-b;
+    font-size: 13vw;
+    line-height: 9.5vw;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+}
+
+#page2>h2::before {
+    content: "Third generation family-owned ranch brokerage";
+    position: absolute;
+    bottom: -25%;
+    left: 35%;
+    font-family: america-r;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+
+}
+
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    padding: 100px 130px;
+
+
+
+}
+
+#page3>h1 {
+    font-family: america-b;
+    font-size: 9vw;
+    line-height: 7.5vw;
+    letter-spacing: -5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#page3>h2 {
+    color: #fff;
+    font-family: america-r;
+    font-size: 6vw;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+
+#page3>p {
+    color: #fff;
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+    font-family: america-r;
+    font-weight: 100;
+
+}
+
+
+#page3 #img-div {
+    height: 150px;
+    width: 180px;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/d3370821d518e13fd16b439a1fb420c72e416641-581x383.png/brandon_bownds.png?rect=0,30,581,325&bg=F2F1EC&w=320&h=179&fit=min&auto=format);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    scale: 0;
+    transition: all ease .3s;
+
+}
+
+#img-div>h5 {
+    color: #000000;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 5px;
+
+}
+
+#page3-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+
+}
+
+
+#page4>img {
+    height: 300px;
+    position: absolute;
+    width: 250px;
+    z-index: 9;
+
+}
+
+#page4>button{
+    background-image: url(https://bowndsranches.com/textures/buttonBg.svg);
+    padding: 10px 20px;
+    position: absolute;
+    border: none;
+    font-family: america;
+    text-transform: uppercase;
+    font-size: 17px;
+    z-index: 99;
+
+}
+
+.elem {
+    border-top: 1px solid #fff;
+    position: relative;
+    margin-top: -10px;
+    cursor: default;
+  
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 1px solid #fff;
+}
+
+
+.elem h1 {
+    font-family: america-b;
+    font-size: 11vw;
+    text-transform: uppercase;
+    opacity: 0.3;
+    text-align: center;
+
+
+
+}
+
+#moving-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow-y: hidden;
+    z-index: 99;
+    opacity: 0;
+    transition:  all ease .12s;
+}
+
+
+
+
+
+#moving-text h2 {
+    font-family: america-b;
+    font-size: 11vw;
+    text-transform: uppercase;
+    display: inline-block;
+    opacity: 1;
+    animation-name: text-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes text-move {
+    0% {
+        transform: translateX(0);
+    }
+
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.elem:hover #moving-text {
+    opacity: 1;
+}
+
+.elem:hover h1 {
+    opacity: 0;
+}
+
+#page5 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    
+   
+
+
+}
+
+#page5-text{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: relative;
+}
+
+#page5>h1{
+    font-family: america-b;
+    font-size: 13vw;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 10vw;
+    text-align: center;
+    padding-top: 300px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    word-spacing: -3px;
+}
+
+#page5-text1{
+    width: 20%;
+}
+
+#page5-text1 h6{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    word-spacing: 1px;
+}
+
+
+#page5-text1 h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 220px;
+    word-spacing: -3px;
+    letter-spacing: -1px;
+    line-height: 28px;
+}
+
+
+#page5-text2{
+    width: 20%;
+    
+}
+
+#page5-text2 h6{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    word-spacing: 1px;
+}
+
+
+#page5-text2 h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 240px;
+    word-spacing: -3px;
+    letter-spacing: -1px;
+    line-height: 28px;
+}
+
+
+
+#page5-text3{
+    width: 20%;
+    position: relative;
+  
+}
+
+#page5-text3 h6{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    word-spacing: 1px;
+}
+
+
+#page5-text3 h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 220px;
+    word-spacing: -3px;
+    letter-spacing: -1px;
+    line-height: 28px;
+}
+
+
+#page5-text-btm{
+    display: flex;
+    gap: 300px;
+    margin-left: 400px;
+    align-items: center;
+    padding-top: 150px;
+}
+
+#page5-text4{
+    width: 20%;
+
+}
+
+
+#page5-text4 h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    word-spacing: -3px;
+    letter-spacing: -1px;
+    line-height: 26px;
+}
+
+
+
+#page5-text5{
+    width: 20%;
+
+}
+
+
+#page5-text5 h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    word-spacing: -3px;
+    letter-spacing: -1px;
+    line-height: 26px;
+}
+
+
+#page6{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 400px 0px;
+    overflow: hidden;
+
+}
+
+#page6-img1{
+    height: 450px;
+    width: 750px;
+    background-color: yellow;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/336838d48da46ea806426b4185e7f8a87262a6a5-1521x974.png/image.png?rect=1,0,1520,974&bg=F2F1EC&w=1024&h=656&auto=format);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(3deg);
+    position: absolute;
+}
+
+
+
+#page6-img2{
+    height: 450px;
+    width: 750px;
+    background-color: rgb(43, 130, 159);
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/ac5d899c94acdca5124d1fcfb738940892e29544-1520x973.png/image.png?rect=0,1,1520,972&bg=F2F1EC&w=1024&h=655&auto=format);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(-5deg);
+    position: absolute;
+}
+
+
+
+#page7{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/621eec2f38561b44cf71398c69f515bac78c3342-1457x1524.png/phinehas-adams-fB0XRnOegDQ-unsplash%201.png?bg=F2F1EC&w=1440&h=1506&auto=format);
+    background-size: cover;
+    
+
+}
+
+
+
+
+
+
+#page8{
+    min-height: 100vh;
+    width: 100%;
+    background-color: lightcyan;
+}
